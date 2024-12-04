@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Role-Based Access Control (RBAC)</h1>
+
+        <div id="user-management">
+            <h2>User Management</h2>
+            <form id="add-user-form">
+                <input type="text" id="user-name" placeholder="Enter user name" required>
+                <select id="user-role">
+                    <option value="">Select Role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Editor">Editor</option>
+                    <option value="Viewer">Viewer</option>
+                </select>
+                <button type="submit">Add User</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table">
+                    <!-- User rows will appear here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="role-management">
+            <h2>Role Management</h2>
+            <form id="add-role-form">
+                <input type="text" id="role-name" placeholder="Enter role name" required>
+                <button type="submit">Add Role</button>
+            </form>
+            <ul id="role-list">
+                <!-- Role list items will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
